@@ -4,7 +4,6 @@ import math
 import time
 import datetime
 
-
 token = "YOU TOKEN"
 group_id = "ID GROUP VK"
 
@@ -33,7 +32,6 @@ def count_user():
     return count_group
 
 def pagination():
-
     """Доступные значения через запятую: sex, bdate, city, country, photo_50, photo_100,
     photo_200_orig, photo_200, photo_400_orig, photo_max, photo_max_orig,
     online, online_mobile, lists, domain, has_mobile, contacts, connections,
@@ -105,7 +103,6 @@ def get_user():
                 #    now = datetime.datetime.now().strftime( '%Y-%m-%d' )
                 #    if date_last == now: last_seen.add(us["id"])
 
-
     print ("Заблокированных или неактивных пользователей: " + str(len(user_notgood)))
     print("Активные пользователи: " + str( len( user_good ) ) )
     print("    Из них мужчин: " + str( len( user_man ) ) )
@@ -121,7 +118,4 @@ def get_user():
     print( "-------------------------------------------------------------" )
     #print( "Сегодня в ВК заходило: " + str( len(last_seen ) ) )
 
-
 get_user()
-
-
